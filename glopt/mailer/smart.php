@@ -11,12 +11,12 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'aspmx.l.google.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'vmlyuzan@gmail.com';                 // Наш логин
 $mail->Password = 'Kaizek007$';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 25;                                    // TCP port to connect to
+$mail->Port = 587;                                    // TCP port to connect to
  
 $mail->setFrom('vmlyuzan@gmail.com', '');   // От кого письмо 
 $mail->addAddress('mlyzan@ukr.net', '');     // Add a recipient
