@@ -6,7 +6,8 @@ window.addEventListener('DOMContentLoaded', () => {
     close2= document.querySelectorAll('.close')[1],
     overlay = document.querySelector('.overlay'),
     btn1 = document.querySelector('#header-btn'),
-    btn2 = document.querySelector('#subheader-btn');
+    btn2 = document.querySelector('#subheader-btn'),
+    modalOpen = document.querySelector('#modal-open');
 
 
 
@@ -22,6 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     });
 
+    modalOpen.addEventListener('click', ()=>{
+        overlay.style.display = "block";
+    });
     btn1.addEventListener('click', ()=>{
         overlay.style.display = "block";
     });
