@@ -16,7 +16,7 @@ $('form').submit(function(e) {
         data: $(this).serialize()
     }).done(function() {
         $(this).find("input").val("");
-        $('#consultation').fadeOut();
+        $('#consultation, #order').fadeOut();
         $('.overlay, #thanks').fadeIn('slow');
 
         $('form').trigger('reset');
@@ -24,8 +24,4 @@ $('form').submit(function(e) {
     return false;
     });
 
-//gamburger
-$('#gamburger').on('click', function(){
-    $('.nav').toggle('slow');
-    this.classList.toggle('gamburger_active');
-});
+
