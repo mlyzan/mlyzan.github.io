@@ -47,7 +47,7 @@
     
                     <div class="col-6 col-md-3">
                         <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
-                        <button class="subheader_btn">заказать звонок</button>
+                        <button id="header-btn" class="subheader_btn">заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                         Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве.  Водители у нас
                         зарабатывают от 80000- 120000 в месяц.
                     </div>
-                    <button class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
+                    <button id="subheader-btn" class="promo_btn">ОТПРАВИТЬ ЗАЯВКУ!</button>
                 </div>
             </div>
         </div>
@@ -433,6 +433,24 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal">
+            <div class="close">&times</div>
+            <h2>ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</h2>
+            <form action="#">
+                <input placeholder="Ваше имя"  required type="text">
+                <input placeholder="Ваш номер телефона" required type="number">
+                <input placeholder="Ваше email" required type="email">
+                <button id="header-btn" class="modal_btn">ОТПРАВИТЬ ЗАЯВКУ</button>
+            </form>
+        </div>
+
+        <div class="thanks">
+            <div class="close">&times</div>
+            <h2>Спасибо за вашу заявку!</h2>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
