@@ -83,6 +83,7 @@ window.addEventListener('DOMContentLoaded', function () {
       $('#thanks').fadeIn('slow');
       setTimeout(function () {
         $('#thanks').fadeOut('slow');
+        overlay.style.display = "none";
       }, 3000);
       $('form').trigger('reset');
     });
