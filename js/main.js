@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function () {
       type: "POST",
       url: "mailer/smart.php",
       data: $(this).serialize()
-    }).done(function () {
+    }).always(function () {
       $(_this).find("input").val("");
       $(".modal").fadeOut();
       $('#thanks').fadeIn('slow');
